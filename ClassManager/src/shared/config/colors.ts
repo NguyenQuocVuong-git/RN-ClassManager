@@ -14,6 +14,8 @@ export const colors = {
   textSecondary: "#828282",
   textHighlight: "#00B14F",
 
+  lightGray: "#f2f2f2",
+
   backgroundOverlay: "rgba(0, 0, 0, 0.5)",
   backgroundDark: "rgba(0, 0, 0, 0.7)",
   backgroundMuted: "#E8EBEE",

@@ -17,4 +17,3 @@ export const LoginLink: React.FC<LoginLinkProps> = ({ onPress }) => {
     </Text>
   );
 };
-
