@@ -5,7 +5,6 @@ import { Button } from "src/shared/ui/button/button";
 import TextInputCustom from "src/shared/ui/text-input/text-input";
 import { CREATE_ACCOUNT_LABEL, CREATE_ACCOUNT_SCREEN } from "../../constants";
 import { styles } from "./styles";
-import Or from "../or/or";
 
 const AccountForm: React.FC = () => {
   const { control, handleSubmit } = useForm();
@@ -51,7 +50,6 @@ const AccountForm: React.FC = () => {
         onPress={handleSubmit((data) => console.log(data))}
         style={styles.button}
       />
-      <Or />
     </View>
   );
 };

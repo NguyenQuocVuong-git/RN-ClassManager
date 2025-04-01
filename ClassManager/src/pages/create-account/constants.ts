@@ -9,4 +9,5 @@ export const CREATE_ACCOUNT_SCREEN = {
   HELLO: "Xin chào !",
   SUB_HELLO: "Đăng ký tài khoản để bắt đầu học tiếng Anh",
   BUTTON_CREATE: "Đăng ký",
+  OR: "Hoặc",
 };
