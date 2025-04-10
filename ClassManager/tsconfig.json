@@ -7,10 +7,12 @@
       "@app/*": ["src/app/*"],
       "@pages/*": ["src/pages/*"],
       "@theme": ["theme.js"]
-    },
+    }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
   ]
 }
