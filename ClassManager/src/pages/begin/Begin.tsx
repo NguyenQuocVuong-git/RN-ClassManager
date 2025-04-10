@@ -22,10 +22,9 @@ const Begin: React.FC = () => {
       <Logo />
       <Text style={styles.description}>{BEGIN_SCREEN.TITLE}</Text>
       <RegisterButton onPress={handleRedirectToCreateAccount} /> 
-      <LoginLink onPress={() => {}} />
+      <LoginLink />
     </View>
   );
 };
-
 
 export default Begin;

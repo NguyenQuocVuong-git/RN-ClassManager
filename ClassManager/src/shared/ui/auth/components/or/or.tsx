@@ -3,6 +3,7 @@ import { View } from "react-native";
 import { styles } from "./styles";
 import { Text } from "react-native-paper";
 import { CREATE_ACCOUNT_SCREEN } from "@pages/create-account/constants";
+// import { CREATE_ACCOUNT_SCREEN } from "../../../../../pages/create-account/constants";
 
 const Or: React.FC = () => {
   return (

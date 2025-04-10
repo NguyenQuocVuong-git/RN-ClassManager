@@ -6,8 +6,8 @@ export const CREATE_ACCOUNT_LABEL = {
 
 export const CREATE_ACCOUNT_SCREEN = {
   CREATE_ACCOUNT: "Tạo tài khoản",
-  HELLO: "Xin chào !",
-  SUB_HELLO: "Đăng ký tài khoản để bắt đầu học tiếng Anh",
+  TITLE: "Xin chào !",
+  SUB_TITLE: "Đăng ký tài khoản để bắt đầu học tiếng Anh",
   BUTTON_CREATE: "Đăng ký",
   OR: "Hoặc",
 };

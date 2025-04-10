@@ -1,19 +1,19 @@
 import React from "react";
 import { View } from "react-native";
-import { SocialButton } from "src/shared/ui/social-button/social-button";
 import { styles } from "./styles";
+import { SocialButton } from "src/shared/ui/social-button/social-button";
 
 const socialButtons = [
   {
-    icon: require("../../assets/google-icon.png"),
+    icon: require("assets/images/google-icon.png"),
     onPress: () => console.log("login by google"),
   },
   {
-    icon: require("../../assets/fb-icon.png"),
+    icon: require("assets/images/fb-icon.png"),
     onPress: () => console.log("login by fb"),
   },
   {
-    icon: require("../../assets/apple-icon.png"),
+    icon: require("assets/images/apple-icon.png"),
     onPress: () => console.log("login by apple"),
   },
 ];
