@@ -1,11 +1,11 @@
-import React from "react";
-import { Image, ImageSourcePropType, TouchableOpacity } from "react-native";
-import { Text } from "react-native-paper";
-import { styles } from "./styles";
+import React from 'react'
+import { Image, ImageSourcePropType, TouchableOpacity } from 'react-native'
+import { Text } from 'react-native-paper'
+import { styles } from './styles'
 
 interface SocialButtonProps {
-  icon: ImageSourcePropType;
-  onPress: () => void;
+  icon: ImageSourcePropType
+  onPress: () => void
 }
 
 export const SocialButton: React.FC<SocialButtonProps> = ({
@@ -18,5 +18,5 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
         <Image source={icon} />
       </Text>
     </TouchableOpacity>
-  );
-};
+  )
+}

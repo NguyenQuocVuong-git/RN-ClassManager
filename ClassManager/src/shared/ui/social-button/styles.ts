@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { colors } from "src/shared/config/colors";
+import { StyleSheet } from 'react-native'
+import { colors } from 'src/shared/config/colors'
 
 export const styles = StyleSheet.create({
   socialButton: {
@@ -9,4 +9,4 @@ export const styles = StyleSheet.create({
     padding: 12,
     backgroundColor: colors.lightGray,
   },
-});
+})

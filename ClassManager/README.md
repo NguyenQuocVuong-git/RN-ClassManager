@@ -49,18 +49,16 @@ Join our community of developers creating universal apps.
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 
-
 ### Cấu trúc thư mục theo mô hình FSD
 
- - app/: Chứa config của app như Navigation, Redux Store, Context Providers...
+- app/: Chứa config của app như Navigation, Redux Store, Context Providers...
 
- - pages/: Chứa các màn hình chính như Home, Profile, Settings...
+- pages/: Chứa các màn hình chính như Home, Profile, Settings...
 
- - features/: Mỗi tính năng độc lập có logic, API, state riêng (ví dụ: auth, cart, chat).
+- features/: Mỗi tính năng độc lập có logic, API, state riêng (ví dụ: auth, cart, chat).
 
- - entities/: Định nghĩa dữ liệu, models, API, Redux slice liên quan.
+- entities/: Định nghĩa dữ liệu, models, API, Redux slice liên quan.
 
- - widgets/: Các component UI có thể tái sử dụng.
+- widgets/: Các component UI có thể tái sử dụng.
 
- - shared/: Các module, helpers, hooks, constants được dùng chung.
-
+- shared/: Các module, helpers, hooks, constants được dùng chung.

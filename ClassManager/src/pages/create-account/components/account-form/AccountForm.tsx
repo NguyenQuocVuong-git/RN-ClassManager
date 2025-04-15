@@ -1,19 +1,19 @@
-import React from "react";
-import { Controller, useForm } from "react-hook-form";
-import { StyleSheet, View } from "react-native";
-import { Button } from "src/shared/ui/button/button";
-import TextInputCustom from "src/shared/ui/text-input/text-input";
-import { CREATE_ACCOUNT_LABEL, CREATE_ACCOUNT_SCREEN } from "../../constants";
-import { styles } from "./styles";
+import React from 'react'
+import { Controller, useForm } from 'react-hook-form'
+import { StyleSheet, View } from 'react-native'
+import { Button } from 'src/shared/ui/button/button'
+import TextInputCustom from 'src/shared/ui/text-input/text-input'
+import { CREATE_ACCOUNT_LABEL, CREATE_ACCOUNT_SCREEN } from '../../constants'
+import { styles } from './styles'
 
 const AccountForm: React.FC = () => {
-  const { control, handleSubmit } = useForm();
+  const { control, handleSubmit } = useForm()
 
   return (
     <View style={styles.container}>
       <Controller
         control={control}
-        name="fullName"
+        name='fullName'
         render={({ field: { onChange, value } }) => (
           <TextInputCustom
             label={CREATE_ACCOUNT_LABEL.NAME}
@@ -25,7 +25,7 @@ const AccountForm: React.FC = () => {
 
       <Controller
         control={control}
-        name="email"
+        name='email'
         render={({ field: { onChange, value } }) => (
           <TextInputCustom
             label={CREATE_ACCOUNT_LABEL.EMAIL}
@@ -36,7 +36,7 @@ const AccountForm: React.FC = () => {
       />
       <Controller
         control={control}
-        name="password"
+        name='password'
         render={({ field: { onChange, value } }) => (
           <TextInputCustom
             label={CREATE_ACCOUNT_LABEL.PASSWORD}
@@ -51,7 +51,7 @@ const AccountForm: React.FC = () => {
         style={styles.button}
       />
     </View>
-  );
-};
+  )
+}
 
-export default AccountForm;
+export default AccountForm

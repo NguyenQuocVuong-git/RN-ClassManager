@@ -1,10 +1,10 @@
-import React from "react";
-import { Button } from "src/shared/ui/button/button";
-import { BUTTON_REGISTER } from "../../constants";
-import { styles } from "./styles";
+import React from 'react'
+import { Button } from 'src/shared/ui/button/button'
+import { BUTTON_REGISTER } from '../../constants'
+import { styles } from './styles'
 
 interface RegisterButtonProps {
-  onPress: () => void;
+  onPress: () => void
 }
 
 export const RegisterButton: React.FC<RegisterButtonProps> = ({ onPress }) => {
@@ -15,6 +15,5 @@ export const RegisterButton: React.FC<RegisterButtonProps> = ({ onPress }) => {
       style={styles.customButton}
       textStyle={styles.customButtonText}
     />
-  );
-};
-
+  )
+}

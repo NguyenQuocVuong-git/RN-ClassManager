@@ -1,4 +1,4 @@
 export enum SCREEN {
-  BEGIN = "Begin",
-  CREATE_ACCOUNT = "CreateAccount",
+  BEGIN = 'Begin',
+  CREATE_ACCOUNT = 'CreateAccount',
 }

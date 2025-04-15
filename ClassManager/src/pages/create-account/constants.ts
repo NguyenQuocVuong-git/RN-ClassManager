@@ -1,13 +1,13 @@
 export const CREATE_ACCOUNT_LABEL = {
-  NAME: "Họ và tên",
-  EMAIL: "Nhập email",
-  PASSWORD: "Nhạp mật khẩu",
-};
+  NAME: 'Họ và tên',
+  EMAIL: 'Nhập email',
+  PASSWORD: 'Nhạp mật khẩu',
+}
 
 export const CREATE_ACCOUNT_SCREEN = {
-  CREATE_ACCOUNT: "Tạo tài khoản",
-  TITLE: "Xin chào !",
-  SUB_TITLE: "Đăng ký tài khoản để bắt đầu học tiếng Anh",
-  BUTTON_CREATE: "Đăng ký",
-  OR: "Hoặc",
-};
+  CREATE_ACCOUNT: 'Tạo tài khoản',
+  TITLE: 'Xin chào !',
+  SUB_TITLE: 'Đăng ký tài khoản để bắt đầu học tiếng Anh',
+  BUTTON_CREATE: 'Đăng ký',
+  OR: 'Hoặc',
+}
