@@ -19,6 +19,7 @@ const Begin: React.FC = () => {
   return (
     <View style={styles.container}>
       <Logo />
+      <Text className='text-sm text-red-500'>sadasdasda</Text>
       <Text style={styles.description}>{BEGIN_SCREEN.TITLE}</Text>
       <RegisterButton onPress={handleRedirectToCreateAccount} />
       <LoginLink />

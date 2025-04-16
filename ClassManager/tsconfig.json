@@ -4,15 +4,23 @@
     "strict": true,
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@pages/*": ["src/pages/*"],
-      "@theme": ["theme.js"]
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@theme": [
+        "theme.js"
+      ]
     }
   },
   "include": [
-    "./src/**/*.js",
-    "./src/**/*.jsx",
-    "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "*.ts",
+    "*.tsx",
+    "src/types/nativewind.d.ts",
+    "nativewind-env.d.ts"
   ]
 }
