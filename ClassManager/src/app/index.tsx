@@ -4,16 +4,18 @@ import LoginAccount from '@pages/login-account/LoginAccount'
 import { createStackNavigator } from '@react-navigation/stack'
 import { View } from 'react-native'
 import { Provider as PaperProvider, Text } from 'react-native-paper'
-import '../../global.css'
 import { theme } from '../../theme.js'
+import '../styles/global.css'
 
 const Stack = createStackNavigator()
 
 export default function App() {
   return (
     <PaperProvider theme={theme}>
-      <View className='flex-1 items-center justify-center bg-blue-500 p-4 text-white'>
-        <Text className='text-2xl font-bold text-white'>Test TailwindCSS</Text>
+      <View className='flex-1 items-center justify-center p-4'>
+        <Text className='text-2xl font-bold text-red-600'>
+          Test TailwindCSS
+        </Text>
       </View>
 
       <Stack.Navigator>

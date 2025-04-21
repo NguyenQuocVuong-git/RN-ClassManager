@@ -76,7 +76,8 @@ export default tseslint.config(gitignore(), {
     },
   },
   extends: [
-    ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.recommended,
+    ...typescriptEslint.configs.recommendedTypeChecked,
     pluginPromise.configs['flat/recommended'],
     pluginUnicorn.configs.recommended,
     eslintPluginPrettier,
