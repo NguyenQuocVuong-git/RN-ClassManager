@@ -1,9 +1,9 @@
-import Begin from '@pages/begin/begin'
+import Begin from '@pages/begin/Begin'
 import CreateAccount from '@pages/create-account/CreateAccount'
 import LoginAccount from '@pages/login-account/LoginAccount'
 import { createStackNavigator } from '@react-navigation/stack'
-import { View } from 'react-native'
-import { Provider as PaperProvider, Text } from 'react-native-paper'
+import { Text, View } from 'react-native'
+import { Provider as PaperProvider } from 'react-native-paper'
 import { theme } from '../../theme.js'
 import '../styles/global.css'
 
