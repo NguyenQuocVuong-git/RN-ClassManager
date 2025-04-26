@@ -6,7 +6,7 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@pages/*": ["src/pages/*"],
-      "@theme": ["theme.js"]
+      "@theme": ["theme.js"],
     }
   },
   "include": [

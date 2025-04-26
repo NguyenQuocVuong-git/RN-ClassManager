@@ -1,16 +1,16 @@
 import React from 'react'
 import { Controller, useForm } from 'react-hook-form'
-import { StyleSheet, View } from 'react-native'
+import { CreateAccountProps } from '@pages/create-account/type'
+import { View } from 'react-native'
 import { Button } from 'src/shared/ui/button/button'
 import TextInputCustom from 'src/shared/ui/text-input/text-input'
 import { CREATE_ACCOUNT_LABEL, CREATE_ACCOUNT_SCREEN } from '../../constants'
-import { styles } from './styles'
 
 const AccountForm: React.FC = () => {
-  const { control, handleSubmit } = useForm()
+  const { control, handleSubmit } = useForm<CreateAccountProps>()
 
   return (
-    <View style={styles.container}>
+    <View className='mb-auto mt-auto flex items-center'>
       <Controller
         control={control}
         name='fullName'
@@ -48,7 +48,7 @@ const AccountForm: React.FC = () => {
       <Button
         title={CREATE_ACCOUNT_SCREEN.BUTTON_CREATE}
         onPress={handleSubmit((data) => console.log(data))}
-        style={styles.button}
+        className='mb-4 w-full text-text-highlight'
       />
     </View>
   )

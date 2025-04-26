@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { TextInput } from 'react-native-paper'
 import { colors } from 'src/shared/config/colors'
-import { styles } from './styles'
 
 interface TextInputProps {
   value: string
@@ -40,7 +39,7 @@ const TextInputCustom: React.FC<TextInputProps> = ({
 
   return (
     <TextInput
-      style={styles.input}
+      className='mb-6.25 w-full bg-white text-xs font-normal text-text-highlight'
       label={label}
       value={value}
       secureTextEntry={isPassword && showPass}

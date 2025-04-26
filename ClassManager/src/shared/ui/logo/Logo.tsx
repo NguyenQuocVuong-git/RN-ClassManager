@@ -1,12 +1,11 @@
 import React from 'react'
 import { Image } from 'react-native'
-import { styles } from './styles'
 
 export const Logo = () => {
   return (
     <Image
-      source={require('assets/images/logo-no-bg.png')}
-      style={styles.logo}
+      source={require('assets/images/logo-no-bg.png') as number}
+      className='w-100 h-100 mb-0'
     />
   )
 }

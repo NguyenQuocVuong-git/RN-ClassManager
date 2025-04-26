@@ -1,7 +1,6 @@
 import React from 'react'
 import { Image, ImageSourcePropType, TouchableOpacity } from 'react-native'
 import { Text } from 'react-native-paper'
-import { styles } from './styles'
 
 interface SocialButtonProps {
   icon: ImageSourcePropType
@@ -14,7 +13,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
 }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <Text style={styles.socialButton}>
+      <Text className='h-12 w-12 rounded-150'>
         <Image source={icon} />
       </Text>
     </TouchableOpacity>

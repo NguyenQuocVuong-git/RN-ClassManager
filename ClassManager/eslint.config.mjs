@@ -63,6 +63,9 @@ export default tseslint.config(gitignore(), {
         ignoreRestSiblings: true,
       },
     ],
+    '@typescript-eslint/no-require-imports': 'off',
+    'unicorn/prefer-module': 'off',
+    'tailwindcss/classnames-order': 'off',
   },
   settings: {
     'import/resolver': {
@@ -77,7 +80,7 @@ export default tseslint.config(gitignore(), {
   },
   extends: [
     ...tseslint.configs.recommended,
-    ...typescriptEslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.recommendedTypeChecked,
     pluginPromise.configs['flat/recommended'],
     pluginUnicorn.configs.recommended,
     eslintPluginPrettier,
