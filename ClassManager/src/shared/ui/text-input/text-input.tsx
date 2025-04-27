@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { View } from 'react-native'
 import { TextInput } from 'react-native-paper'
 import { colors } from 'src/shared/config/colors'
 
@@ -8,14 +9,18 @@ interface TextInputProps {
   setValue: (value: string) => void
   isPassword?: boolean
   isShowPassword?: boolean
+  className?: string
+  error?: boolean
 }
 
-const TextInputCustom: React.FC<TextInputProps> = ({
+export const TextInputCustom: React.FC<TextInputProps> = ({
   value,
   label,
   setValue,
   isPassword = false,
   isShowPassword = false,
+  className,
+  error = false,
 }) => {
   const [stateProps, setStateProps] = useState({
     colorBorderDefault: colors.border,
@@ -25,10 +30,13 @@ const TextInputCustom: React.FC<TextInputProps> = ({
   const { colorBorderDefault, showPass } = stateProps
 
   const handleFocus = () =>
-    setStateProps({ ...stateProps, colorBorderDefault: colors.textHighlight })
+    setStateProps((prev) => ({
+      ...prev,
+      colorBorderDefault: error ? colors.danger : colors.textHighlight,
+    }))
 
   const handleBlur = () =>
-    setStateProps({ ...stateProps, colorBorderDefault: colors.border })
+    setStateProps((prev) => ({ ...prev, colorBorderDefault: colors.border }))
 
   const handleShowPass = () =>
     setStateProps((prev) => ({ ...prev, showPass: !prev.showPass }))
@@ -38,20 +46,20 @@ const TextInputCustom: React.FC<TextInputProps> = ({
   }, [isShowPassword])
 
   return (
-    <TextInput
-      className='mb-6.25 w-full bg-white text-xs font-normal text-text-highlight'
-      label={label}
-      value={value}
-      secureTextEntry={isPassword && showPass}
-      mode='outlined'
-      theme={{ colors: { primary: colorBorderDefault }, roundness: 4 }}
-      onChangeText={setValue}
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      right={
-        isPassword && <TextInput.Icon icon='eye' onPress={handleShowPass} />
-      }
-    />
+    <View className={`mb-6.25 w-full ${className}`}>
+      <TextInput
+        label={label}
+        value={value}
+        secureTextEntry={isPassword && showPass}
+        mode='outlined'
+        theme={{ colors: { primary: colorBorderDefault }, roundness: 4 }}
+        onChangeText={setValue}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        right={
+          isPassword && <TextInput.Icon icon='eye' onPress={handleShowPass} />
+        }
+      />
+    </View>
   )
 }
-export default TextInputCustom

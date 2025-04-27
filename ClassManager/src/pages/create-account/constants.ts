@@ -11,3 +11,9 @@ export const CREATE_ACCOUNT_SCREEN = {
   BUTTON_CREATE: 'Đăng ký',
   OR: 'Hoặc',
 }
+
+export const ERROR_MESSAGE = {
+  NAME: 'Vui lòng nhập họ tên',
+  EMAIL: 'Vui lòng nhập email',
+  PASSWORD: 'Vui lòng nhập mật khẩu',
+}

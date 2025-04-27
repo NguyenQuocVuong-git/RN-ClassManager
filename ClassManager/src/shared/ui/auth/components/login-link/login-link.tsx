@@ -12,7 +12,7 @@ export const LoginLink: React.FC = () => {
   }
 
   return (
-    <Text className='pb-14.5 m-auto text-3.25 text-gray-dark'>
+    <Text className='pb-14.5 m-auto h-full text-3.25 text-gray-dark'>
       {LOGIN_LINK.CERATE_ACCOUNT} {'  '}
       <Text
         className='text-3.25 text-text-highlight underline'

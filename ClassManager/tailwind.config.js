@@ -31,11 +31,13 @@ module.exports = {
       },
       width: {
         percent90: '90%',
+        100: '25rem', // 400px to rem
       },
       height: {
+        100: '25rem', // 400px to rem
         103.5: '25.875rem',
       },
-      insert: {
+      inset: {
         12.5: '3.125rem', // 50px to rem
       },
       marginBottom: {
@@ -43,8 +45,18 @@ module.exports = {
         12.5: '3.125rem', // 50px to rem
       },
       fontSize: {
-        5.5 : '1.375rem', // 22px to rem
-        3.25: '0.8125rem', // 13px to rem
+        xs: 12, // text-xs
+        sm: 14, // text-sm
+        base: 16, // text-base
+        lg: 18, // text-lg
+        xl: 20, // text-xl
+        '2xl': 24, // text-2xl
+        '3xl': 30, // text-3xl
+        '4xl': 36, // text-4xl
+        '5xl': 48, // text-5xl
+        '6xl': 60, // text-6xl
+        5.5: '22', // 22px to rem : 375rem
+        3.25: '13', //   rem: 0.8125rem
       },
       paddingBottom: {
         14.5: '3.625rem', // 58px to rem
