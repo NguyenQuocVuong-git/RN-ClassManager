@@ -27,7 +27,7 @@ export const AuthScreenLayout: React.FC<AuthScreenLayoutProps> = ({
         style={{ transform: [{ rotate: '-20deg' }] }}
       />
       <View className='top-12.5 absolute w-full'>
-        <View className='pl-5'>
+        <View className='mb-12 pl-5'>
           <TouchableOpacity onPress={onBackPress}>
             <Image
               source={require('assets/images/chevron-left.png') as number}
@@ -39,7 +39,7 @@ export const AuthScreenLayout: React.FC<AuthScreenLayoutProps> = ({
           </Text>
         </View>
 
-        <View className='w-full rounded-t-xl px-5 pt-8 text-white'>
+        <View className='w-full rounded-t-xl bg-white px-5 pt-8'>
           <Text className='mb-1 text-5.5 font-bold text-text-highlight'>
             {subtitle}
           </Text>

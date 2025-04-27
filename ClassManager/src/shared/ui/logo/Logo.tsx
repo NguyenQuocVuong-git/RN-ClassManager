@@ -5,7 +5,7 @@ export const Logo = () => {
   return (
     <Image
       source={require('assets/images/logo-no-bg.png') as number}
-      className='w-100 h-100 mb-0'
+      className='h-100 w-100 mb-0 mt-44'
     />
   )
 }
