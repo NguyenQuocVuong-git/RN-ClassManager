@@ -2,6 +2,7 @@ import React from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { CreateAccountProps } from '@pages/create-account/type'
 import { Text, View } from 'react-native'
+import { register } from 'src/features/auth/api/register'
 import { Button } from 'src/shared/ui/button/button'
 import { TextInputCustom } from 'src/shared/ui/text-input/text-input'
 import {
@@ -16,6 +17,12 @@ const AccountForm: React.FC = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<CreateAccountProps>()
+
+  const onSubmit = async (data: CreateAccountProps) => {
+    console.log("🚀 ~ onSubmit ~ data:", data)
+    // const res = await register(data)
+    // console.log('res', res)
+  }
 
   return (
     <View className='mb-auto mt-12'>
@@ -82,7 +89,7 @@ const AccountForm: React.FC = () => {
       )}
       <Button
         title={CREATE_ACCOUNT_SCREEN.BUTTON_CREATE}
-        onPress={handleSubmit((data) => console.log(data))}
+        onPress={() => handleSubmit(onSubmit)()}
         className='mt-12 w-full bg-text-highlight'
       />
     </View>

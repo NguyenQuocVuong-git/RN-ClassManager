@@ -5,7 +5,7 @@ import { RegisterButton } from 'src/features/auth/ui/register-button/register-bu
 import { SCREEN } from 'src/shared/constants/screen'
 import { RootStackParamList } from 'src/shared/type/type'
 import { LoginLink } from 'src/shared/ui/auth/components/login-link/login-link'
-import { Logo } from 'src/shared/ui/logo/logo'
+import { Logo } from 'src/shared/ui/logo/Logo'
 import { BEGIN_SCREEN } from './constant'
 
 const Begin: React.FC = () => {
