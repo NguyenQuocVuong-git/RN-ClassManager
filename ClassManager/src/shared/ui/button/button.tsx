@@ -3,7 +3,7 @@ import { Text, TouchableOpacity } from 'react-native'
 
 interface ButtonProps {
   title: string
-  onPress: () => void
+  onPress: () => Promise<unknown>
   disabled?: boolean
   className?: string
   textStyle?: string
@@ -18,7 +18,9 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <TouchableOpacity
-      onPress={onPress}
+      onPress={() => {
+        void onPress()
+      }}
       disabled={disabled}
       className={`items-center rounded-lg bg-background-button px-6 py-3 ${disabled && 'bg-background-disabled'} ${className}`}
     >
